@@ -11,8 +11,8 @@ import jakarta.persistence.GenerationType;
 public class Produto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String uuid;
 
     // Atributos
     private String nome;
